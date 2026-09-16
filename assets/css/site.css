@@ -64,7 +64,7 @@ main,
   border:1px solid #8e1a21;
   background:linear-gradient(145deg,#18080a,#090909);
   box-shadow:inset 3px 0 var(--red);
-  font:900 italic 21px/1 Impact,"Arial Narrow",sans-serif;
+  font:900 italic 21px/1 Montserrat,"Arial Narrow",sans-serif;
 }
 .brand-copy{
   display:flex;
@@ -129,7 +129,7 @@ main,
   right:-28px;
   top:22px;
   color:rgba(227,52,61,.045);
-  font:900 64px/1 Impact,"Arial Narrow",sans-serif;
+  font:900 64px/1 Montserrat,"Arial Narrow",sans-serif;
   letter-spacing:.08em;
   transform:rotate(-3deg);
 }
@@ -150,7 +150,7 @@ h1{
   z-index:1;
   max-width:1000px;
   margin-top:12px;
-  font:900 clamp(38px,7vw,82px)/.96 Impact,"Arial Narrow",sans-serif;
+  font:900 clamp(38px,7vw,82px)/.96 Montserrat,"Arial Narrow",sans-serif;
   letter-spacing:.025em;
 }
 h1 span{color:#f2e9e1}
@@ -201,7 +201,7 @@ h1 span{color:#f2e9e1}
 }
 .section h2{
   margin-top:7px;
-  font:900 30px/1 Impact,"Arial Narrow",sans-serif;
+  font:900 30px/1 Montserrat,"Arial Narrow",sans-serif;
   letter-spacing:.04em;
 }
 .text-link{
@@ -232,7 +232,7 @@ h1 span{color:#f2e9e1}
 }
 .card h3{
   margin-top:13px;
-  font:900 27px/1 Impact,"Arial Narrow",sans-serif;
+  font:900 27px/1 Montserrat,"Arial Narrow",sans-serif;
   letter-spacing:.04em;
 }
 .card p{
