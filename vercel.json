@@ -5,7 +5,7 @@
   "rewrites": [
     {
       "source": "/tarkov/guides/lightkeeper-kord-breach",
-      "destination": "/tarkov/guides/lightkeeper-kord-breach/runbook.html"
+      "destination": "/tarkov/guides/lightkeeper-kord-breach/runbook"
     }
   ],
   "headers": [
