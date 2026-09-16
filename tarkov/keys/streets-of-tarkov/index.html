@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070708">
+  <meta name="description" content="Streets of Tarkov anahtarları, açtıkları odalar, loot özellikleri ve FirstPersonSaga key rotation.">
+  <script defer src="/_vercel/insights/script.js"></script>
+  <title>Streets of Tarkov Key Guide | FirstPersonSaga</title>
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/tarkov-keys.css">
+  <script defer src="/assets/data/tarkov/keys/streets-of-tarkov.js"></script>
+  <script defer src="/assets/js/tarkov/keys.js"></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="FirstPersonSaga ana sayfa">
+      <span class="brand-mark">FPS</span>
+      <span class="brand-copy"><strong>FIRST PERSON SAGA</strong><small>TACTICAL GAMING · GUIDES · TOOLS · LIVE</small></span>
+    </a>
+    <nav class="nav" aria-label="Ana menü">
+      <a href="/tarkov/">Tarkov</a><a href="/tarkov/guides/">Guides</a><a class="active" href="/tarkov/keys/">Keys</a><a href="/">Home</a>
+    </nav>
+  </header>
+
+  <main class="key-main">
+    <section class="key-hero">
+      <div class="key-breadcrumbs"><a href="/tarkov/">Tarkov</a><span>/</span><a href="/tarkov/keys/">Keys</a><span>/</span><span>Streets of Tarkov</span></div>
+      <div class="eyebrow" style="margin-top:20px">FIRSTPERSONSAGA ROTATION & KEY REFERENCE</div>
+      <h1>STREETS OF TARKOV <span>// KEY GUIDE</span></h1>
+      <p class="lede">Yayında kullanılan SICC key seti ile Streets of Tarkov key catalog aynı yerde. Arama, filtreleme, detay görünümü ve cihazda saklanan kişisel “My Key Set” listesi içerir.</p>
+      <div class="key-hero-meta">
+        <div class="key-stat"><strong>17</strong> unique FPS rotation key</div>
+        <div class="key-stat"><strong>47</strong> Streets reference item</div>
+        <div class="key-stat"><strong id="saved-count">0</strong> My Key Set</div>
+        <div class="key-stat">VERIFIED <strong>2026-09-17</strong></div>
+      </div>
+    </section>
+
+    <div class="key-toolbar" aria-label="Key guide controls">
+      <div class="key-tabs" role="tablist">
+        <button class="key-tab active" type="button" data-mode="rotation">FirstPersonSaga Rotation</button>
+        <button class="key-tab" type="button" data-mode="all">All Keys</button>
+      </div>
+      <input id="key-search" class="key-search" type="search" autocomplete="off" placeholder="Key, oda, bina veya loot ara..." aria-label="Anahtar ara">
+      <button id="filter-toggle" class="filter-toggle" type="button">Filters</button>
+    </div>
+    <div id="filter-panel" class="key-filter-panel" aria-label="Key filters">
+      <button class="key-filter active" type="button" data-filter="all">All</button>
+      <button class="key-filter" type="button" data-filter="valuables">Valuables</button>
+      <button class="key-filter" type="button" data-filter="quest">Quest</button>
+      <button class="key-filter" type="button" data-filter="ammo">Ammo</button>
+      <button class="key-filter" type="button" data-filter="weapons">Weapons</button>
+      <button class="key-filter" type="button" data-filter="safe">Safe</button>
+      <button class="key-filter" type="button" data-filter="tech">Tech</button>
+      <button class="key-filter" type="button" data-filter="route-access">Route Access</button>
+    </div>
+
+    <section id="rotation-section" class="key-section">
+      <div class="key-section-head">
+        <div><div class="eyebrow">SICC SET // CURRENT SCREENSHOT</div><h2>FirstPersonSaga Rotation</h2><p class="key-section-copy">Bu kartlar gönderilen SICC ekran görüntüsündeki mevcut setten çıkarıldı. Görselde iki adet Relax ve iki adet Conc sec. bulunuyor; listede unique key olarak tek kartta gösteriliyor.</p></div>
+        <span id="visible-count" class="key-count">17 / 17 key</span>
+      </div>
+      <div class="rotation-note"><strong>Not:</strong> SICC içindeki slot sırası loot route sırası kabul edilmedi. Route order, FirstPersonSaga tarafından ayrıca verildiğinde ayrı alan olarak eklenecek.</div>
+      <div id="rotation-grid" class="key-grid"></div>
+    </section>
+
+    <section id="catalog-section" class="key-section" hidden>
+      <div class="key-section-head"><div><div class="eyebrow">STREETS OF TARKOV</div><h2>All Keys</h2><p class="key-section-copy">Official Wiki’de Streets of Tarkov altında listelenen anahtarların catalog görünümü. Rotation’da olanlar ayrıca işaretlidir; detay katmanı MVP’de önce rotation keylere uygulanmıştır.</p></div><span class="key-count">Reference catalog</span></div>
+      <div id="catalog-grid" class="catalog-grid"></div>
+    </section>
+  </main>
+
+  <div id="key-drawer" class="key-drawer" aria-hidden="true">
+    <div class="key-drawer-backdrop"></div>
+    <aside id="key-drawer-panel" class="key-drawer-panel" role="dialog" aria-modal="true" aria-label="Key detail"></aside>
+  </div>
+
+  <footer class="site-footer"><span>FIRSTPERSONSAGA</span><span>Data reference: Escape from Tarkov Official Wiki · FPS rotation: user-supplied SICC screenshot</span></footer>
+</body>
+</html>
