@@ -83,3 +83,20 @@ Build command, install command ve output directory gerekmiyor.
 - Instagram: https://www.instagram.com/firstpersonsaga/
 - X: https://x.com/FirstPersonSaga
 - TikTok: https://www.tiktok.com/@firstpersonsaga
+
+
+## WARDOGS Season 02 (2026-10-15)
+
+Yeni statik içerik: `/wardogs/season-2/` (oyun hub: `/wardogs/`).
+
+- `wardogs/season-2/index.html`: Türkçe patch notları, tam Role Track / Vendor Price tabloları, grafikler, kaynak bağlantısı.
+- `assets/css/wardogs-season2.css`: Mevcut `site.css` tasarım dilinde ve responsive.
+- `assets/js/wardogs-season2.js`: İçindekiler, tablo içi arama ve görsel büyütme.
+- `assets/images/wardogs/season-02/*.webp`: Yayın rehberinden ayrıştırılmış yerel, önbelleklenebilir görseller.
+- `wardogs/index.html`: WARDOGS oyun merkezi.
+
+Herhangi bir framework, paket yöneticisi, build komutu veya harici JavaScript kütüphanesi gerekmez. `vercel.json` mevcut biçimde kalır. Tüm bağlantıları ve browser davranışını yerel HTTP sunucuda doğrulamak için örnek: `python -m http.server 8000`.
+
+### İçerik notu
+
+Sayfa, kullanıcının sağladığı Season 02 yayın rehberinin içerik ve tablolarını korur. Yayın/sunucu kontrolleri, çift pencere ve sunucuya özel anlatım paneli kaldırılmıştır. Kullanıcıya yönelik bölüm özetleri ve FirstPersonSaga analizleri ayrılmıştır. Kaynak: Steam Patch Notes duyurusu (14 Ekim 2026).
