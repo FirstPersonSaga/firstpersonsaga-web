@@ -1,0 +1,1015 @@
+{
+  "version": "gzw-0.5.0.1-zoneintel-2026-10-22-captured-2026-10-29",
+  "source": "https://zoneintel.gg/hideout",
+  "confidence": "community-sourced; not official game API",
+  "rooms": [
+    {
+      "id": "laboratory",
+      "name": "Laboratory",
+      "requirements": {
+        "player": 1,
+        "labrat": 2
+      },
+      "icon": "⚗"
+    },
+    {
+      "id": "workshop",
+      "name": "Electronics Workshop",
+      "requirements": {
+        "player": 1,
+        "labrat": 2,
+        "artisan": 2
+      },
+      "icon": "▦"
+    },
+    {
+      "id": "utility",
+      "name": "Utility Room",
+      "requirements": {
+        "player": 1,
+        "labrat": 2
+      },
+      "icon": "ϟ"
+    },
+    {
+      "id": "personal",
+      "name": "Personal",
+      "requirements": {},
+      "icon": "▤",
+      "unverified": true
+    }
+  ],
+  "stations": [
+    {
+      "id": "analysis",
+      "room": "laboratory",
+      "name": "Analysis",
+      "icon": "◈",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "pH Meter",
+          "materials": {
+            "Circuit Board": 1,
+            "Complex Glass Electrode": 1,
+            "Electrical Parts": 1,
+            "Plastics": 2
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "Spectrometer",
+          "materials": {
+            "Circuit Board": 3,
+            "Crystal Prism": 1,
+            "Electrical Parts": 4,
+            "Mechanical Parts": 2,
+            "Plastics": 2,
+            "Vapor Lamp": 1
+          },
+          "usd": 35000
+        }
+      ],
+      "prerequisiteStations": [
+        "generator"
+      ],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    },
+    {
+      "id": "extraction",
+      "room": "laboratory",
+      "name": "Extraction Vessel",
+      "icon": "⇄",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Oil Tank",
+          "materials": {
+            "Analog Indicator": 1,
+            "Copper": 1,
+            "Plumbing Parts": 1,
+            "Steel": 1
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "Copper Distillation Still",
+          "materials": {
+            "Analog Indicator": 1,
+            "Copper": 5,
+            "Plumbing Parts": 1,
+            "Water Pump": 1
+          },
+          "usd": 0
+        }
+      ],
+      "prerequisiteStations": [
+        "heat"
+      ],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    },
+    {
+      "id": "filtration",
+      "room": "laboratory",
+      "name": "Filtration",
+      "icon": "⬡",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Cloth Sheet Filter",
+          "materials": {
+            "Fabrics": 4,
+            "Wood": 2
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "Metal Sieve",
+          "materials": {
+            "Fine Metal Mesh": 3,
+            "Steel": 3
+          },
+          "usd": 0
+        }
+      ],
+      "prerequisiteStations": [
+        "extraction",
+        "reaction"
+      ],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    },
+    {
+      "id": "glassware",
+      "room": "laboratory",
+      "name": "Glassware",
+      "icon": "⚗",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Basic Glass Set",
+          "materials": {
+            "Glass": 1,
+            "Laboratory Flask": 1,
+            "Plastics": 1
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "Laboratory Glass Set",
+          "materials": {
+            "Glass": 2,
+            "Laboratory Flask": 1,
+            "Mechanical Pipette": 1,
+            "Plastics": 1
+          },
+          "usd": 0
+        }
+      ],
+      "prerequisiteStations": [],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    },
+    {
+      "id": "heat",
+      "room": "laboratory",
+      "name": "Heat Source",
+      "icon": "♨",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Open Fire Pit",
+          "materials": {
+            "Construction Material": 2,
+            "Steel": 3,
+            "Wood": 1
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "Single Burner",
+          "materials": {
+            "Burner Head": 1,
+            "Construction Material": 3,
+            "Plumbing Parts": 2,
+            "Steel": 4
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 3,
+          "name": "Multiple Burner Array",
+          "materials": {
+            "Burner Head": 2,
+            "Construction Material": 5,
+            "Mechanical Parts": 2,
+            "Plumbing Parts": 5,
+            "Steel": 10
+          },
+          "usd": 40000
+        }
+      ],
+      "prerequisiteStations": [],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    },
+    {
+      "id": "reaction",
+      "room": "laboratory",
+      "name": "Reaction Vessel",
+      "icon": "⌬",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Plastic Drums",
+          "materials": {
+            "Construction Material": 1,
+            "Plastics": 2,
+            "Silicone Sealant": 1
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "Galvanized Tank",
+          "materials": {
+            "Chemicals": 2,
+            "Steel": 4,
+            "Zinc Electrode": 1
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 3,
+          "name": "Stainless Steel Tank",
+          "materials": {
+            "Mechanical Parts": 6,
+            "Stainless Steel Sheet": 3,
+            "Steel": 12
+          },
+          "usd": 45000
+        }
+      ],
+      "prerequisiteStations": [],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    },
+    {
+      "id": "safety",
+      "room": "laboratory",
+      "name": "Ventilation System",
+      "icon": "✣",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Fan",
+          "materials": {
+            "Electrical Parts": 2,
+            "PC Fan": 2,
+            "Plastics": 2
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 3,
+          "name": "Ventilation",
+          "materials": {
+            "Electrical Parts": 5,
+            "HEPA Filter": 1,
+            "PC Fan": 3,
+            "Plumbing Parts": 5,
+            "Steel": 10
+          },
+          "usd": 35000
+        }
+      ],
+      "prerequisiteStations": [
+        "generator"
+      ],
+      "dependencyStatus": "indicative",
+      "notes": "Ventilation L2 requirements are not present in the supplied listing; L3 is retained with original game label."
+    },
+    {
+      "id": "lab-storage",
+      "room": "laboratory",
+      "name": "Storage Equipment",
+      "icon": "▣",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Rusty Old Fridge",
+          "materials": {
+            "Electrical Parts": 1,
+            "Plumbing Parts": 1,
+            "Refrigerant": 1,
+            "Steel": 1
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "Beverage Cooler",
+          "materials": {
+            "Electrical Parts": 1,
+            "Glass": 3,
+            "Plumbing Parts": 2,
+            "Refrigerant": 1,
+            "Steel": 3
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 3,
+          "name": "Laboratory Fridge",
+          "materials": {
+            "Circuit Board": 2,
+            "Electrical Parts": 2,
+            "Glass": 5,
+            "Plumbing Parts": 2,
+            "Refrigerant": 2,
+            "Steel": 6
+          },
+          "usd": 45000
+        }
+      ],
+      "prerequisiteStations": [
+        "generator"
+      ],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    },
+    {
+      "id": "hardware",
+      "room": "workshop",
+      "name": "Hardware",
+      "icon": "▤",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Scavenged PC Rig",
+          "materials": {
+            "CPU": 1,
+            "Graphics Card": 1,
+            "Motherboard": 1,
+            "PC Fan": 1,
+            "Power Supply": 1,
+            "RAM": 1
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "High-End Workstation",
+          "materials": {
+            "CPU": 1,
+            "Graphics Card": 1,
+            "Motherboard": 1,
+            "Plumbing Parts": 2,
+            "Power Supply": 1,
+            "RAM": 3
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 3,
+          "name": "Dedicated Server Rack",
+          "materials": {
+            "Electrical Parts": 5,
+            "Motherboard": 1,
+            "Power Supply": 1,
+            "RAM": 4,
+            "Server CPU": 1
+          },
+          "usd": 45000
+        }
+      ],
+      "prerequisiteStations": [
+        "generator"
+      ],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    },
+    {
+      "id": "mechanical",
+      "room": "workshop",
+      "name": "Machine Tools",
+      "icon": "⚙",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Manual Tooling Rig",
+          "materials": {
+            "Steel": 1,
+            "Toolset": 1,
+            "Wood": 1
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "CNC System",
+          "materials": {
+            "CNC Drill Bits": 1,
+            "Electrical Parts": 1,
+            "Mechanical Parts": 2,
+            "Steel": 3,
+            "Tooling Coolant": 1
+          },
+          "usd": 0
+        }
+      ],
+      "prerequisiteStations": [],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    },
+    {
+      "id": "micro",
+      "room": "workshop",
+      "name": "Micro Electronics",
+      "icon": "▦",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Basic Electronics Bench",
+          "materials": {
+            "Multimeter": 1,
+            "Power Supply": 1,
+            "Soldering Iron": 1,
+            "Toolset": 1,
+            "Wood": 1
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "Advanced Technical Workbench",
+          "materials": {
+            "Electrical Parts": 4,
+            "Multimeter": 1,
+            "Oscilloscope": 1,
+            "Power Supply": 1,
+            "Soldering Iron": 2
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 3,
+          "name": "Microelectronics Station",
+          "materials": {
+            "Circuit Board": 2,
+            "Electrical Parts": 5,
+            "Microscope": 1,
+            "Multimeter": 1,
+            "Oscilloscope": 1,
+            "Power Supply": 1
+          },
+          "usd": 35000
+        }
+      ],
+      "prerequisiteStations": [],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    },
+    {
+      "id": "rf",
+      "room": "workshop",
+      "name": "RF Sensors",
+      "icon": "◉",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Signal Diagnostics Bench",
+          "materials": {
+            "Electrical Parts": 1,
+            "Signal Generator": 1,
+            "Soldering Iron": 1,
+            "Steel": 1,
+            "Wood": 1
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "Electro-Optics & Radar Suite",
+          "materials": {
+            "Electrical Parts": 4,
+            "Laser Tube": 1,
+            "Mechanical Parts": 2,
+            "Oscilloscope": 1,
+            "Signal Generator": 1,
+            "Steel": 6
+          },
+          "usd": 30000
+        }
+      ],
+      "prerequisiteStations": [
+        "generator"
+      ],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    },
+    {
+      "id": "software",
+      "room": "workshop",
+      "name": "Software",
+      "icon": "⌘",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Leaked Military Firmware Bypass",
+          "materials": {
+            "Civilian Software": 3,
+            "Military Software": 1
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "GPU-Accelerated Brute-Force Matrix",
+          "materials": {
+            "Civilian Software": 6,
+            "Graphics Card": 1,
+            "Military Software": 2
+          },
+          "usd": 0
+        }
+      ],
+      "prerequisiteStations": [
+        "hardware"
+      ],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    },
+    {
+      "id": "workshop-storage",
+      "room": "workshop",
+      "name": "Storage Equipment",
+      "icon": "▣",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Salvaged Wooden Crate",
+          "materials": {
+            "Mechanical Parts": 1,
+            "Wood": 1
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "Heavy-Duty Steel Locker",
+          "materials": {
+            "Mechanical Parts": 3,
+            "Steel": 9
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 3,
+          "name": "Modified Server Cabinet",
+          "materials": {
+            "Mechanical Parts": 6,
+            "Stainless Steel Sheet": 4,
+            "Steel": 12
+          },
+          "usd": 30000
+        }
+      ],
+      "prerequisiteStations": [],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    },
+    {
+      "id": "generator",
+      "room": "utility",
+      "name": "Generator",
+      "icon": "ϟ",
+      "tiers": [
+        {
+          "gameLevel": 1,
+          "name": "Two-Stroke Engine",
+          "materials": {
+            "Dynamo": 1,
+            "Mechanical Parts": 1,
+            "Motor Oil": 1,
+            "Steel": 1
+          },
+          "usd": 0
+        },
+        {
+          "gameLevel": 2,
+          "name": "Diesel Generator",
+          "materials": {
+            "Dynamo": 1,
+            "Electrical Parts": 2,
+            "Mechanical Parts": 2,
+            "Motor Oil": 1,
+            "Plumbing Parts": 2,
+            "Steel": 2
+          },
+          "usd": 0
+        }
+      ],
+      "prerequisiteStations": [],
+      "dependencyStatus": "indicative",
+      "notes": ""
+    }
+  ],
+  "materials": [
+    "Analog Indicator",
+    "Burner Head",
+    "Chemicals",
+    "Circuit Board",
+    "Civilian Software",
+    "CNC Drill Bits",
+    "Complex Glass Electrode",
+    "Construction Material",
+    "Copper",
+    "CPU",
+    "Crystal Prism",
+    "Dynamo",
+    "Electrical Parts",
+    "Fabrics",
+    "Fine Metal Mesh",
+    "Glass",
+    "Graphics Card",
+    "HEPA Filter",
+    "Laboratory Flask",
+    "Laser Tube",
+    "Mechanical Parts",
+    "Mechanical Pipette",
+    "Microscope",
+    "Military Software",
+    "Motherboard",
+    "Motor Oil",
+    "Multimeter",
+    "Oscilloscope",
+    "PC Fan",
+    "Plastics",
+    "Plumbing Parts",
+    "Power Supply",
+    "RAM",
+    "Refrigerant",
+    "Server CPU",
+    "Signal Generator",
+    "Silicone Sealant",
+    "Soldering Iron",
+    "Stainless Steel Sheet",
+    "Steel",
+    "Tooling Coolant",
+    "Toolset",
+    "Vapor Lamp",
+    "Water Pump",
+    "Wood",
+    "Zinc Electrode"
+  ],
+  "recipes": [
+    {
+      "id": "recipe-01",
+      "name": "Basic Hacking Tool",
+      "kind": "craft",
+      "room": "workshop",
+      "summary": "Makes 1 Basic Hacking Tool · Electronics Workshop · Crafting · 1 s · needs Compute Capacity 1, Mechanical Engineering 1",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-02",
+      "name": "Advanced Hacking Tool",
+      "kind": "craft",
+      "room": "workshop",
+      "summary": "Makes 1 Advanced Hacking Tool · Electronics Workshop · Crafting · 1 s · needs Compute Capacity 5",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-03",
+      "name": "Superior Hacking Tool",
+      "kind": "craft",
+      "room": "workshop",
+      "summary": "Makes 1 Superior Hacking Tool · Electronics Workshop · Crafting · 1 s · needs Compute Capacity 9",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-04",
+      "name": "ORI-12",
+      "kind": "craft",
+      "room": "laboratory",
+      "summary": "Makes 1 ORI-12 · Laboratory · Crafting · 1 s",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-05",
+      "name": "DT-0X",
+      "kind": "craft",
+      "room": "laboratory",
+      "summary": "Makes 1 DT-0X · Laboratory · Crafting · 1 s",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-06",
+      "name": "EPO",
+      "kind": "craft",
+      "room": "laboratory",
+      "summary": "Makes 1 EPO · Laboratory · Crafting · 1 s",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-07",
+      "name": "Fenethylline",
+      "kind": "craft",
+      "room": "laboratory",
+      "summary": "Makes 1 Fenethylline · Laboratory · Crafting · 1 s",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-08",
+      "name": "Morphine",
+      "kind": "craft",
+      "room": "laboratory",
+      "summary": "Makes 1 Morphine · Laboratory · Crafting · 1 s",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-09",
+      "name": "HpR 3-S",
+      "kind": "craft",
+      "room": "laboratory",
+      "summary": "Makes 1 HpR 3-S · Laboratory · Crafting · 1 s",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-10",
+      "name": "Methylphenidate",
+      "kind": "craft",
+      "room": "laboratory",
+      "summary": "Makes 1 Methylphenidate · Laboratory · Crafting · 1 s",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-11",
+      "name": "Strychnine",
+      "kind": "craft",
+      "room": "laboratory",
+      "summary": "Makes 1 Strychnine · Laboratory · Crafting · 1 s",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-12",
+      "name": "Advanced Tracking Tag",
+      "kind": "craft",
+      "room": "workshop",
+      "summary": "Makes 1 Advanced Tracking Tag · Electronics Workshop · Crafting · 1 s",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-13",
+      "name": "Tracking Tag",
+      "kind": "craft",
+      "room": "workshop",
+      "summary": "Makes 1 Tracking Tag · Electronics Workshop · Crafting · 1 s",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-14",
+      "name": "Basic Tracking Tag",
+      "kind": "craft",
+      "room": "workshop",
+      "summary": "Makes 1 Basic Tracking Tag · Electronics Workshop · Crafting · 1 s",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-15",
+      "name": "Artillery Ballistic Calculator",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 CPU Card, 1 LAF Artillery Data Logs · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-16",
+      "name": "Baget-53-31 Onboard Computer",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 Avionics Processor Board, 1 Flight Data Drive · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-17",
+      "name": "Chemical Munitions Container",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 Sarin Canister · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-18",
+      "name": "Counter IED/Jammer Unit",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 Digital Synthesis Engine, 1 Electronic Warfare Configuration Drive · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-19",
+      "name": "Drone Interceptor",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 AI Targeting Module · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-20",
+      "name": "IMSI Catcher",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 Incriminating Phone Logs, 1 Spoofing ASIC Module · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-21",
+      "name": "Last Line Defense Container",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 Nerve Gas Canister · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-22",
+      "name": "Manpack Tactical Radio",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 Encryption Key Drive, 1 FPGA Module · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-23",
+      "name": "Chemical Containment Container",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 Biohazard Canister · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-24",
+      "name": "Portable SATCOM Terminal",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 Oven-Controlled Crystal Oscillator, 1 Uplink Credentials Drive · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-25",
+      "name": "Radar Signal Processor",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 Deep-Space Observation Data Drive, 1 High-Speed Digital Processor Board · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-26",
+      "name": "Missile Seeker Head",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 Missile Guidance Circuit · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-27",
+      "name": "ST1122 Storage Computer",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 Incriminating Data Drive, 1 Server RAM Module · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-28",
+      "name": "Radioisotope Fuel Cell",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 Plutonium Canister · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-29",
+      "name": "UNLRA Field Terminal",
+      "kind": "disassembly",
+      "room": "workshop",
+      "summary": "Makes 1 Multi-Bus Converter, 1 UNLRA Relief Manifest · Electronics Workshop · Disassembly · 12 h",
+      "knownByDefault": true,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-30",
+      "name": "Gray Heroin",
+      "kind": "production",
+      "room": "laboratory",
+      "summary": "Makes 1 Gray Heroin · Laboratory · Production · 5 h 30 m · needs Analysis & Precision 4, Filtration & Processing 2",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-31",
+      "name": "High-Quality Morphine Base",
+      "kind": "production",
+      "room": "laboratory",
+      "summary": "Makes 1 High-Quality Morphine Base · Laboratory · Production · 2 h · needs Extraction & Reaction 8, Heat Control 4",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-32",
+      "name": "Low-Quality Morphine Base",
+      "kind": "production",
+      "room": "laboratory",
+      "summary": "Makes 1 Low-Quality Morphine Base · Laboratory · Production · 2 h · needs Safety 1, Extraction & Reaction 3, Filtration & Processing 1, Heat Control 1",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-33",
+      "name": "10% Morphine Solution",
+      "kind": "production",
+      "room": "laboratory",
+      "summary": "Makes 1 10% Morphine Solution · Laboratory · Production · 5 h 30 m · needs Storage Capacity 1, Analysis & Precision 1",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-34",
+      "name": "Medium-Quality Morphine Base",
+      "kind": "production",
+      "room": "laboratory",
+      "summary": "Makes 1 Medium-Quality Morphine Base · Laboratory · Production · 2 h · needs Extraction & Reaction 7, Filtration & Processing 1, Heat Control 2",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-35",
+      "name": "Pure White Heroin",
+      "kind": "production",
+      "room": "laboratory",
+      "summary": "Makes 1 Pure White Heroin · Laboratory · Production · 5 h 30 m · needs Safety 3, Analysis & Precision 8, Filtration & Processing 2",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-36",
+      "name": "Stabilized Morphine Sulfate Liquid",
+      "kind": "production",
+      "room": "laboratory",
+      "summary": "Makes 1 Stabilized Morphine Sulfate Liquid · Laboratory · Production · 5 h 30 m · needs Storage Capacity 4, Analysis & Precision 3",
+      "knownByDefault": false,
+      "materialsVerified": false
+    },
+    {
+      "id": "recipe-37",
+      "name": "USP Morphine Sulfate",
+      "kind": "production",
+      "room": "laboratory",
+      "summary": "Makes 1 USP Morphine Sulfate · Laboratory · Production · 5 h 30 m · needs Storage Capacity 6",
+      "knownByDefault": false,
+      "materialsVerified": false
+    }
+  ],
+  "missingVerifiedData": [
+    "Personal room unlock and stations",
+    "Ventilation intermediate L2 costs",
+    "Craft, Production and Disassembly input resources",
+    "Exact station capability point values",
+    "Live in-game progression sync"
+  ]
+}
